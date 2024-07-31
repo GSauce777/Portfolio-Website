@@ -7,18 +7,20 @@
     <meta name="viewport" content="width=device-width, initial scale=1.0">
     <title>Gabriel Saucedo Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
     <script src="https://kit.fontawesome.com/1b355109fd.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 <div id="header">
-    <div class="container">
+    <div class="container-head">
         <nav>
             <img src="Pictures/logo.png" class="logo">
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About Me</a></li>
-                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#education-experience">Education & Experience</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
@@ -27,7 +29,7 @@
         </nav>
         <div class="header-text">
             <p>Computer Science Major</p>
-            <h1>Hello,<br>I'm <span>Gabriel</span> Saucedo</h1>
+            <h1>Hello,<br>I'm <span>Gabriel</span> <br class="mobile-break"> Saucedo</h1>
         </div>
     </div>
 
@@ -37,7 +39,7 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="Pictures/face.png" alt="">
+                <img src="Pictures/aboutme.jpg" alt="">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title"> About Me</h1>
@@ -47,30 +49,16 @@
                 managerial abilities to ensure seamless functioning of all operations at Apple.</p>
 
                 <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links active-link" onclick="opentab('skills')">Current Skill Set</p>
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
                         <li><span>Proficient in C/C++</span></li>
                         <li><span>Proficient in Java</span></li>
                         <li><span>Adept in HTML/CSS</span></li>
+                        <li><span>Adept in JavaScript</span></li>
                         <li><span>Adept in Swift</span></li>
                         <li><span>Proficient in Debugging</span></li>
-
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>No Current Professional Experience</span></li>
-
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>California State University San Marcos - Bachelor's Degree,<br> Computer Science - 2025</span></li>
-                        <li><span>Palomar College - Associate's Degree, Math and Science - 2023</span></li>
 
                     </ul>
                 </div>
@@ -78,11 +66,88 @@
         </div>
     </div>
 </div>
-<!-------------ROADMAP------------------>
-<div id="roadmap">
+<!-------------Education and Experience------------------>
+<div id="education-experience">
     <div class="container">
-        <h1 class="sub-title"> My Roadmap</h1>
-        <img src="Pictures/RoadmapEX.png" class="roadmapimg">
+        <h1 class="sub-title"> My Education and Experience</h1>
+        <div class="timeline-wrapper">
+            <div class="timeline-row">
+                <div class="timeline-col">
+                    <h2 class="heading">
+                        <i class="fa-solid fa-user-graduate"></i>
+                        Education
+                    </h2>
+
+                    <div class="timeline-box">
+                        <div class="content-box">
+                            <div class="date">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                2022
+                            </div>
+
+                            <h3>Palomar College</h3>
+                            <h4>Associate's Degree - Math & Science</h4>
+
+                            <p>Out of high school, I explored my career options, and ending up making the decision of pursuing a degree in Computer Science. 
+                                From there, I started on the path to transferring to a 4-year university by taking General Education and Preparation for the Major courses,
+                                and in doing so, I achieved an Associate's Degree in Math and Science from Palomar College.
+                            </p>
+                        </div>
+                        <div class="content-box">
+                            <div class="date">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                2025
+                            </div>
+
+                            <h3>California State University, San Marcos</h3>
+                            <h4>Bachelor's Degree - Computer Science</h4>
+
+                            <p>In Fall of 2024, I transferred to CSUSM, and am currently completing my remaining courses to earn my Bachelor's Degree of Science in Computer
+                                Science. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-col">
+                    <h2 class="heading">
+                        <i class="fa-solid fa-briefcase"></i>
+                        Experience
+                    </h2>
+
+                    <div class="timeline-box">
+                        <div class="content-box">
+                            <div class="date">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                2024
+                            </div>
+
+                            <h3>Pending...</h3>
+
+                            <p>Currently no professional experience as of the current date.</p>
+                        </div>
+
+                        <div class="content-box">
+                            <div class="date">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                2024
+                            </div>
+
+                            <h3>Coming Soon!</h3>
+                        </div>
+
+                            
+                        <div class="content-box">
+                            <div class="date">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                2024
+                            </div>
+    
+                            <h3>More to Come!</h3>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <!-------------PORTFOLIO------------------>
@@ -94,7 +159,7 @@
                 <img src="Pictures/work-1.jpg">
                 <div class="layer">
                     <h3>iOS App</h3>
-                    <p>This is an iOS app that I developed using Swift that allows the user to ... Download it on the App Store!</p>
+                    <p>This is an iOS app that I developed using JavaScript that allows the user to ... Download it on the App Store!</p>
                     <a href="#"><i class="fa-brands fa-app-store-ios"></i></a>
                 </div>
             </div>
@@ -115,7 +180,7 @@
                 </div>
             </div>
         </div>
-        <a href="https://github.com/GSauce777" target="_blank" class="btn">See More</a>
+        <a href="https://github.com/GSauce777" target="_blank" class="btn">See More <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </div>
 </div>
 <!-------------CONTACT------------------>
@@ -124,27 +189,32 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-regular fa-paper-plane"></i> gabrielcsaucedo777@gmail.com</p>
+                <p><i class="fa-solid fa-envelope"></i> gabrielcsaucedo777@gmail.com</p>
                 <p><i class="fa-solid fa-phone"></i> 760-390-5230</p>
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/gabriel-saucedo-6b6086235/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/GSauce777" target="_blank"><i class="fa-brands fa-square-github"></i></a>
                 </div>
-                <a href="Pictures/Gabriel-Saucedo-CV-2024.pdf" download class="btn btn2">Download CV</a>
+                <a href="Pictures/Gabriel-Saucedo-CV-2024.pdf" download class="btn btn2">Download CV <i class="fa-solid fa-download"></i> </a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+                    <button type="submit" class="btn btn2">Submit <i class="fa-solid fa-paper-plane"></i></button>
                 </form>
                 <span id="msg"></span>
             </div>
         </div>
     </div>
     <div class="copyright">
-        <p>Coded and Copyright © Gabriel Saucedo 2024.</p>
+        <p>Website Coded and Copyright © Gabriel Saucedo 2024.</p>
+    </div>
+
+    <button id="landscapeButton">Press to Relax</button>
+    <div id="landscapeContainer">
+        <video id="landscapeVideo" src="Pictures/relaxvid.mp4" style="display: none;" controls></video>
     </div>
 </div>
 
