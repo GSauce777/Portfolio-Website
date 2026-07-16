@@ -40,6 +40,7 @@ function About() {
                 <li><span>Proficient in Java</span></li>
                 <li><span>Skilled in HTML/CSS</span></li>
                 <li><span>Skilled in JavaScript</span></li>
+                <li><span>Skilled in Linux CLI</span></li>
                 <li><span>Novice in Swift</span></li>
                 <li><span>Proficient in Debugging</span></li>
               </ul>
